@@ -86,7 +86,23 @@
   .verbal { background: #e6fff5; color: #32a68f; }
   .visual { background: #e6e9ff; color: #5a5add; }
   
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: column;
+      max-width: 90%;
+      border-radius: 0;
+    }
+  
+    .result-box {
+      border-radius: 0 0 25px 25px;
+    }
+  
+    .summary-box {
+      padding: 30px 20px;
+    }
+  }
+
+  @media (max-width: 375px) {
     .container {
       flex-direction: column;
       max-width: 90%;
