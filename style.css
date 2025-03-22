@@ -86,35 +86,37 @@
   .verbal { background: #e6fff5; color: #32a68f; }
   .visual { background: #e6e9ff; color: #5a5add; }
   
-  @media (min-width: 768px) {
+  @media (max-width: 600px) {
     .container {
-      flex-direction: column;
-      max-width: 90%;
-      border-radius: 0;
+        flex-direction: column;
+        max-width: 90%;
+        border-radius: 5%;
     }
-  
-    .result-box {
-      border-radius: 0 0 25px 25px;
-    }
-  
-    .summary-box {
-      padding: 30px 20px;
-    }
-  }
 
-  @media (max-width: 375px) {
-    .container {
-      flex-direction: column;
-      max-width: 90%;
-      border-radius: 0;
-    }
-  
     .result-box {
-      border-radius: 0 0 25px 25px;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
     }
-  
+
     .summary-box {
-      padding: 30px 20px;
+        width: 100%;
+        padding: 1.5rem;
     }
-  }
+}
+
+/* ✅ Larger Screens (1024px and above) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .result-box {
+        border-radius: 20px 0 0 20px;
+    }
+
+    .summary-box {
+        padding: 2rem;
+    }
+}
+
   
